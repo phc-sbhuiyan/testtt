@@ -1,1 +1,2 @@
 trulens-eval
+trulens.core
