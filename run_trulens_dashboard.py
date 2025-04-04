@@ -56,4 +56,4 @@ with truchain as recording:
 
 tru.get_leaderboard(app_ids=["Chat_QA101_PHQ"])
 
-tru.run_dashboard()
+tru.run.run_dashboard()
