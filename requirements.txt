@@ -154,3 +154,4 @@ trulens-providers-openai
 trulens-apps-langchain
 langchain
 chromadb
+pysqlite3-binary
