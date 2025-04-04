@@ -2,7 +2,9 @@ from trulens_eval import Tru
 
 tru = Tru(database_file="../default.sqlite")
 
-#TruSession().migrate_database()
+session = TruSession()
+session.migrate_database(prior_prefix="")
+
 #TruSession().migrate_database(prior_prefix="")
 #tru .reset_database()
 
