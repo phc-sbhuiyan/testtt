@@ -1,4 +1,5 @@
 from trulens_eval import Tru
+from trulens.core import TruSession
 
 tru = Tru(database_file="../default.sqlite")
 
