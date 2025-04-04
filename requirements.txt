@@ -153,4 +153,4 @@ trulens-eval
 trulens-providers-openai
 trulens-apps-langchain
 langchain
-logger
+chromadb
