@@ -43,17 +43,17 @@ assistant = pc.assistant.Assistant(
     assistant_name="pineapple-employee-assistant-bot", 
 )
 
-# wrap with TruLens
-truchain = TruApp(
-    assistant,
-    app_id='Chat_QA101_PHQ',
-    feedbacks=[qa_relevance])
+# # wrap with TruLens
+# truchain = TruApp(
+#     assistant,
+#     app_id='Chat_QA101_PHQ',
+#     feedbacks=[qa_relevance])
 
-user_query = "Do you have any information about walk-in guests?"
-msg = Message(role="user", content=user_query)
-with truchain as recording:
-  rag_assistant = assistant.chat(messages=[msg])
+# user_query = "Do you have any information about walk-in guests?"
+# msg = Message(role="user", content=user_query)
+# with truchain as recording:
+#   rag_assistant = assistant.chat(messages=[msg])
 
-tru.get_leaderboard(app_ids=["Chat_QA101_PHQ"])
+tru.get_leaderboard(app_ids=["Experiment-3: RAG over SOP"])
 
 tru.run_dashboard()
