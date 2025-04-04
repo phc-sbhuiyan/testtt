@@ -1,5 +1,9 @@
 import streamlit as st
 from utils import create_sidebar
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 from trulens_eval import TruChain, Feedback, Tru, feedback
 from pinecone import Pinecone
 from pinecone_plugins.assistant.models.chat import Message
