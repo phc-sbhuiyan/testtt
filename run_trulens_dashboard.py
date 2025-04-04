@@ -1,10 +1,12 @@
 from trulens_eval import Tru
 from trulens.core import TruSession
 
-tru = Tru(database_file="default.sqlite")
+#database_file="default.sqlite"
 
-session = TruSession()
-session.migrate_database(prior_prefix="")
+tru = Tru()
+
+#session = TruSession()
+#session.migrate_database(prior_prefix="")
 
 #TruSession().migrate_database(prior_prefix="")
 #tru .reset_database()
