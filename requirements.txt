@@ -1,2 +1,2 @@
 trulens-eval
-trulens.core
+trulens-core==1.4.8
