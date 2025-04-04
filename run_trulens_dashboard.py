@@ -23,7 +23,7 @@ from langchain.chains import RetrievalQA
 from trulens.apps.custom import TruApp
 from trulens.core import TruSession
 from trulens.apps.custom import instrument
-from trulens.dashboard import run_dashboard
+from trulens.dashboard.run import run_dashboard
 
 create_sidebar()
 
@@ -56,4 +56,4 @@ with truchain as recording:
 
 tru.get_leaderboard(app_ids=["Chat_QA101_PHQ"])
 
-tru.run.run_dashboard()
+tru.run_dashboard()
