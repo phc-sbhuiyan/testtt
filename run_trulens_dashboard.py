@@ -90,7 +90,7 @@ class RAG:
 
         completion = (
             oai_client.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model="gpt-4o-mini",
                 temperature=0,
                 messages=[
                     {
@@ -127,7 +127,7 @@ import numpy as np
 from trulens.core import Feedback
 from trulens.core import Select
 from trulens.providers.openai import OpenAI
-provider = OpenAI(model_engine="gpt-4")
+provider = OpenAI(model_engine="gpt-4o-mini")
 # Define a groundedness feedback function
 f_groundedness = (
     Feedback(
